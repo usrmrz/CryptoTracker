@@ -1,4 +1,4 @@
-package com.plcoding.cryptotracker.util
+package dev.usrmrz.cryptotracker.util
 
 import com.plcoding.cryptotracker.R
 

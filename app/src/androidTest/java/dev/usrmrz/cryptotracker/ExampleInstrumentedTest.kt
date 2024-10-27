@@ -1,4 +1,4 @@
-package com.plcoding.cryptotracker
+package dev.usrmrz.cryptotracker
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

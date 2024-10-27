@@ -1,4 +1,4 @@
-package com.plcoding.cryptotracker
+package dev.usrmrz.cryptotracker
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.plcoding.cryptotracker.ui.theme.CryptoTrackerTheme
+import dev.usrmrz.cryptotracker.ui.theme.CryptoTrackerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
