@@ -1,6 +1,6 @@
 package dev.usrmrz.cryptotracker.util
 
-import com.plcoding.cryptotracker.R
+import dev.usrmrz.cryptotracker.R
 
 fun getDrawableIdForCoin(symbol: String): Int {
     return when (symbol.uppercase()) {
