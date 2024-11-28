@@ -7,15 +7,15 @@ plugins {
 
 
 android {
-    namespace = libs.versions.app.get().toString()
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    namespace = "dev.usrmrz.cryptotracker"
+    compileSdk = 35
 
     defaultConfig {
-        applicationId = libs.versions.app.get().toString()
-        minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = libs.versions.versionCode.get().toInt()
-        versionName = libs.versions.versionName.get().toString()
+        applicationId = "dev.usrmrz.cryptotracker"
+        minSdk = 26
+        targetSdk = 35
+        versionCode = 1
+        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -24,12 +24,17 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+
+            buildConfigField("String", "BASE_URL", "\"https://api.coincap.io/v2/\"")
         }
     }
     compileOptions {
